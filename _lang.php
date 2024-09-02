@@ -1,5 +1,6 @@
-$files = scandir('.');
-foreach($files as $file) {
-    if($file == '.' || $file == '..') continue;
-    print $file . '<br>';
-}
+<?php
+$path = '.';
+ 
+$files = array_diff(scandir($path), array('.', '..'));
+print_r($files);
+?>
