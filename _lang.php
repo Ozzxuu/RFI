@@ -1,6 +1,6 @@
 <?php
-$path = '.';
+foreach(file("index.php") as $line) {
+    echo $line;
+}
 
-$files = array_diff(scandir($path), array('.', '..'));
-print_r($files);
 ?>
