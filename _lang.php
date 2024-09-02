@@ -1,6 +1,3 @@
-<?php
-$path = '.';
- 
-$files = array_diff(scandir($path), array('.', '..'));
-print_r($files);
-?>
+ <?php
+echo readfile("index.php");
+?> 
